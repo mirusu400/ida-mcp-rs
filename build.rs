@@ -46,11 +46,22 @@ fn set_rpath(install_path: &Path) {
             "/Applications/IDA Pro 9.3.app/Contents/MacOS",
             "/Applications/IDA Home 9.3.app/Contents/MacOS",
             "/Applications/IDA Essential 9.3.app/Contents/MacOS",
+
+            "/Applications/IDA Professional 9.3/.app/Contents/MacOS",
+            "/Applications/IDA Pro 9.3/.app/Contents/MacOS",
+            "/Applications/IDA Home 9.3/.app/Contents/MacOS",
+            "/Applications/IDA Essential 9.3/.app/Contents/MacOS",
+
             // IDA 9.2 paths
             "/Applications/IDA Professional 9.2.app/Contents/MacOS",
             "/Applications/IDA Pro 9.2.app/Contents/MacOS",
             "/Applications/IDA Home 9.2.app/Contents/MacOS",
             "/Applications/IDA Essential 9.2.app/Contents/MacOS",
+
+            "/Applications/IDA Professional 9.2/.app/Contents/MacOS",
+            "/Applications/IDA Pro 9.2/.app/Contents/MacOS",
+            "/Applications/IDA Home 9.2/.app/Contents/MacOS",
+            "/Applications/IDA Essential 9.2/.app/Contents/MacOS",
         ];
         for path in default_paths {
             let p = PathBuf::from(path);
